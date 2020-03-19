@@ -16,7 +16,7 @@ before_install:
   - npm install -g @angular/cli
   - npm install @angular-devkit/core 
 install:
-  - npm test  
+  - npm install  
 
 script:
-  - npm test
+  - npm build
