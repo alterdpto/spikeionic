@@ -14,6 +14,7 @@ cache:
 before_install:
   - sudo -E apt-get -yq --no-install-suggests --no-install-recommends --allow-unauthenticated $(travis_apt_get_options) install google-chrome-stable 
   - npm install -g @angular/cli
+  - npm install @angular-devkit/core 
 install:
   - npm test
 
