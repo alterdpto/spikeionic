@@ -16,7 +16,7 @@ before_install:
   - npm install -g @angular/cli
   - npm install @angular-devkit/core 
 install:
-  - npm test
+  - npm test  -- --no-watch --no-progress --browsers=ChromeHeadlessC
 
 script:
   - npm test
