@@ -1,0 +1,21 @@
+dist: trusty
+sudo: false
+
+language: node_js
+node_js:
+  - "12"
+
+
+   
+cache:
+  directories:
+     - ./node_modules
+
+before_install:
+  - sudo -E apt-get -yq --no-install-suggests --no-install-recommends --allow-unauthenticated $(travis_apt_get_options) install google-chrome-stable 
+  
+install:
+  - npm install
+
+script:
+  - npm start
